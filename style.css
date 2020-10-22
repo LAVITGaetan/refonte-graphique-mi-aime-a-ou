@@ -1,0 +1,429 @@
+/* Eviter les problemes d'affichage*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Image de fond de page*/
+
+body{
+    background-image: url(images/background_accueil.png);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Menu*/
+
+.menu{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #134e5e, #71b280);
+    border-bottom: 2px solid white;
+    box-shadow: 2px 2px 7px white;
+    position: fixed;
+    top: 0;
+    display: flex;
+}
+
+.menu_links{
+    width: 90%;
+    height: 100%;
+}
+
+.menu_list{
+    list-style: none;
+}
+
+.menu_list__items{
+    width: 16.667%;
+    height: 60px;
+    color: white;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+/* Effets du menu au survol de la souris*/
+
+.menu_list__items:hover{
+    background-color: #134e5e;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    font-weight: bold;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu_search{
+    display: flex;
+    align-items: center;
+}
+
+.search_input{
+    height: 60%;
+    width: auto;
+    padding: 10px 16px;
+    background-color: #134e5e;
+    border: 2px solid white;
+    color: white;
+}
+
+/*Contenu de page*/
+
+/* Titre de la page*/
+
+.contenu_titre{
+    width: 50%;
+    margin: 140px auto 80px auto;
+    padding: 10px;
+    background-color: #307564;
+    border-right: 3px solid #e9c46a;
+    border-bottom: 3px solid #e9c46a;
+    box-shadow: 6px 6px 4px #264653;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-style: italic;
+    font-size: 30px;
+}
+
+/* Introduction de la page*/
+
+.contenu_presentation{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    border: 2px solid #307564;
+    box-shadow: 2px 2px 4px #307564;
+    display: flex;
+}
+
+.presentation_description{
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    font-size: 22px;
+    line-height: 30px;
+    background-color: #264653;
+    color: white;
+    border-right: 2px solid #e9c46a;
+}
+
+/* Slide accueil*/
+
+.presentation_slide{
+    width: 70%;
+    height: auto;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    from{
+        background: url(images/slide1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    20%{
+        background: url(images/slide2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    40%{
+        background: url(images/slide3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    60%{
+        background: url(images/slide4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    80%{
+        background: url(images/slide5.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    to{
+        background: url(images/slide6.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/* Partie Randonnées*/
+
+.contenu_randonnee{
+    width: 80%;
+    height: 600px;
+    margin: 120px auto;
+}
+
+.randonnee_titre{
+    margin: auto;
+    padding: 7px 0 7px 0;
+    font-size: 25px;
+    background-color: #307564;
+    color: white;
+    border-bottom: 3px solid #e9c46a;
+    text-align: center;
+}
+
+.randonnee_images{
+    display: flex;
+}
+
+.randonnee_image-1{
+    width: 33.3%;
+    height: 100%;
+    transition: 1.5s ease-in-out;
+}
+
+.randonnee_image-2{
+    width: 33.3%;
+    height: 100%;
+    transition: 1.5s ease-in-out;
+}
+
+.randonnee_image-3{
+    width: 33.3%;
+    height: 100%;
+    transition: 1.5s ease-in-out;
+}
+
+/* Effets survol des images de rando*/
+.randonnee_image-1:hover{
+    width: 50%;
+    transition: 1.5s ease;
+}
+
+.randonnee_image-2:hover{
+    width: 50%;
+    transition: 1.5s ease;
+}
+
+.randonnee_image-3:hover{
+    width: 50%;
+    transition: 1.5s ease;
+}
+
+.randonnee_description{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #264653e6;
+    border: 1px solid #264653;
+    box-shadow: 2px 2px 4px #307564;
+}
+
+#randonnee_description{
+    font-size: 22px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+}
+
+/* Partie Faune et Flore*/
+
+.contenu_faune-et-flore{
+    width: 80%;
+    height: 500px;
+    margin: 300px auto 120px auto;
+    background-color: #e9c46a;
+    border: 10px double #264653;
+    box-shadow: 2px 2px 4px #264653;
+    display: flex;
+}
+
+.contenu_faune{
+    width: 50%;
+    height: 100%;
+    background-image: url(images/image-faune.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: ease 1s;
+}
+
+.contenu_flore{
+    width: 50%;
+    height: 100%;
+    background-image: url(images/image-flore.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: ease 1s;
+}
+
+.faune_titre{
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 5px 8px;
+    font-size: 32px;
+    background-color: #134e5ed3;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.flore_titre{
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 5px 8px;
+    font-size: 32px;
+    background-color: #134e5ed3;
+    color: #ffffff;
+    display: inline-block;
+}
+
+/* Effet au survol des images de faune et de flore*/
+
+.contenu_faune:hover{
+    width: 80%;
+    transition: ease-in-out 1.5s;
+    cursor: pointer;
+}
+
+.contenu_flore:hover{
+    width: 80%;
+    transition: ease-in-out 1.5s;
+    cursor: pointer;
+}
+
+/* Partie culture*/
+
+.contenu_culture{
+    width: 80%;
+    height: 800px;
+    margin:  0 auto 120px auto;
+    display: flex;
+}
+
+.culture_titre{
+    margin-left: 55%;
+    margin-top: 1%;
+    padding: 5px;
+    font-size: 25px;
+    background-color: #264653;
+    color: white;
+    border: 2px solid white;
+    position: absolute;
+}
+
+/*Block religion*/
+
+.culture_religion{
+    width: 33%;
+    height: 500px;
+    background-image: url(images/image-religion.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 1s;
+}
+
+/*Block poesie*/
+
+.culture_poesie{
+    width: 33%;
+    height: 500px;
+    background-image: url(images/image_poesie.jpg);
+    background-size: cover;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 1s;
+}
+
+/*Block chanson*/
+
+.culture_chanson{
+    width: 33%;
+    height: 500px;
+    background-image: url(images/image-chanson.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 1s;
+}
+
+/* Effets au survol des blocks religion chanson et poesie*/
+
+.culture_religion:hover{
+    height: 800px;
+    margin-top: 0px;
+    transition-duration: 1.5s;
+}
+
+.culture_poesie:hover{
+    height: 800px;
+    margin-top: 0px;
+    transition-duration: 1.5s;
+}
+
+.culture_chanson:hover{
+    height: 800px;
+    margin-top: 0px;
+    transition-duration: 1.5s;
+}
+
+/*Style des titres des blocks */
+
+#culture_chanson, #culture_religion, #culture_poesie{
+    padding: 5px;
+    background-color: white;
+    color: #264653;
+    border: solid 2px #264653;
+    box-shadow: 2px 2px 4px #264653;
+}
+
+#culture_chanson, #culture_religion, #culture_poesie:hover{
+    cursor: pointer;
+}
+
+/*Partie histoire*/
+
+.contenu_histoire{
+    width: 80%;
+    height: 600px;
+    margin: 0 auto 120px auto;
+    background-color: #307564;
+}
+
+.histoire_titre{
+    padding: 5px;
+    font-size: 35px;
+    background: linear-gradient(to right, #606c88, #3f4c6b);
+    color: white;
+    text-align: center;
+}
+
+.histoire_titre:hover{
+    cursor: pointer;
+}
+
+/* Pied de page*/
+
+.pied-de-page{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    line-height: 40px;
+    background: linear-gradient(to right, #134e5e, #71b280);
+    color: white;
+    text-align: center;
+}

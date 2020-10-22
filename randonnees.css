@@ -1,0 +1,458 @@
+/* Eviter les problemes d'affichage*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Image de fond de page*/
+
+body{
+    background-image: url(images/wallpaper_randonnees.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*Menu*/
+
+.menu{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #134e5e, #71b280);
+    border-bottom: 2px solid white;
+    box-shadow: 2px 2px 7px white;
+    position: fixed;
+    top: 0;
+    display: flex;
+}
+
+.menu_links{
+    width: 100%;
+    height: 100%;
+}
+
+.menu_list{
+    list-style: none;
+}
+
+.menu_list__items{
+    width: 16.667%;
+    height: 60px;
+    color: white;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+/* Effets du menu au survol de la souris*/
+
+.menu_list__items:hover{
+    background-color: #134e5e;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    font-weight: bold;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu_search{
+    display: flex;
+    align-items: center;
+}
+
+.search_input{
+    height: 60%;
+    width: auto;
+    padding: 10px 16px;
+    background-color: #134e5e;
+    border: 2px solid white;
+    color: white;
+}
+
+/*Contenu de page*/
+
+/* Titre de la page*/
+
+.rando-titre{
+    width: 50%;
+    margin: 140px auto 40px auto;
+    padding: 10px;
+    background-color: #307564;
+    border-right: 3px solid #e9c46a;
+    border-bottom: 3px solid #e9c46a;
+    box-shadow: 6px 6px 4px #264653;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-style: italic;
+    font-size: 25px;
+}
+
+/* Introduction de la page*/
+
+.rando-intro{
+    width: 80%;
+    height: auto;
+    margin: 100px auto 50px auto;
+    background-color: #264653e6;
+    border: 1px solid #307564;
+    box-shadow: 2px 2px 4px #307564;
+}
+
+#rando-description{
+    padding: 20px;
+    font-size: 22px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+}
+
+/* Block contenant les images de rando*/
+
+.sentiers{
+    width: 90%;
+    height: auto;
+    margin: 100px auto 50px auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*paragraphe de description des images de rando*/
+
+p{
+    padding: 20px 50px 20px 50px;
+    line-height: 30px;
+}
+
+/*titre des images de rando*/
+
+.sentier_titre{
+    padding: 10px;
+    background-color: rgba(48, 117, 100, 0.9);
+    color: white;
+    border-top: 2px solid white;
+    text-align: center;
+}
+
+/*block contenant les paragraphes de description d'image*/
+
+.sentier_texte{
+    width: 100%;
+    height: 35%;
+    background-color: #264653;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ensemble des block images*/
+
+.sentier_1{
+    width: 50%;
+    height: 700px;
+    border-right: 2px solid #e9c46a;
+}
+
+.sentier_1__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/glaciere.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sentier_2{
+    width: 50%;
+    height: 700px;
+    border-left: 2px solid #e9c46a;
+}
+
+.sentier_2__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/cascade_du_chaudron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_3{
+    width: 50%;
+    height: 700px;
+    border-right: 2px solid #e9c46a;
+
+}
+
+.sentier_3__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/cascade_maniquet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_4{
+    width: 50%;
+    height: 700px;
+    border-left: 2px solid #e9c46a;
+}
+
+.sentier_4__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/sentier_de_la_providence.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_5{
+    width: 50%;
+    height: 700px;
+    border-right: 2px solid #e9c46a;
+}
+
+.sentier_5__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/vallee_de_takamaka_.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_6{
+    width: 50%;
+    height: 700px;
+    border-left: 2px solid #e9c46a;
+}
+
+.sentier_6__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/sentier_bassin_boeuf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_7{
+    width: 50%;
+    height: 700px;
+    border-right: 2px solid #e9c46a;
+}
+
+.sentier_7__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/bassin_hirondelles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_8{
+    width: 50%;
+    height: 700px;
+    border-left: 2px solid #e9c46a;
+}
+
+.sentier_8__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/bassin_paix_bassin_la_mer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_9{
+    width: 50%;
+    height: 700px;
+    border-right: 2px solid #e9c46a;
+}
+
+.sentier_9__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/sentier_chemin_sassa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_10{
+    width: 50%;
+    height: 700px;
+    border-left: 2px solid #e9c46a;
+}
+
+.sentier_10__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/cap_jaune.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_11{
+    width: 50%;
+    height: 700px;
+    border-right: 2px solid #e9c46a;
+}
+
+.sentier_11__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/cascade_biberon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_12{
+    width: 50%;
+    height: 700px;
+    border-left: 2px solid #e9c46a;
+}
+
+.sentier_12__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/bras_rouge.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_13{
+    width: 50%;
+    height: 700px;
+    border-right: 2px solid #e9c46a;
+}
+
+.sentier_13__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/chemin_des_anglais.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_14{
+    width: 50%;
+    height: 700px;
+    border-left: 2px solid #e9c46a;
+}
+
+.sentier_14__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/foret_cilaos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_15{
+    width: 50%;
+    height: 700px;
+    border-right: 2px solid #e9c46a;
+}
+
+.sentier_15__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/arbre_du_voyageur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_16{
+    width: 50%;
+    height: 700px;
+    border-left: 2px solid #e9c46a;
+}
+
+.sentier_16__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/col_taibit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_17{
+    width: 50%;
+    height: 700px;
+    border-right: 2px solid #e9c46a;
+}
+
+.sentier_17__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/foret_des_hauts_de_mont-vert.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_18{
+    width: 50%;
+    height: 700px;
+    border-left: 2px solid #e9c46a;
+}
+
+.sentier_18__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/foret_tamarins_piton_ravine_blanche.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sentier_19{
+    width: 50%;
+    height: 700px;
+    border-right: 2px solid #e9c46a;
+}
+
+.sentier_19__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/Grand_bassin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sentier_20{
+    width: 50%;
+    height: 700px;
+    border-left: 2px solid #e9c46a;
+}
+
+.sentier_20__image{
+    width: 100%;
+    height: 65%;
+    background-image: url(./images/grand_benare_ile_reunion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Pied de page*/
+
+.pied-de-page{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    line-height: 40px;
+    background: linear-gradient(to right, #134e5e, #71b280);
+    color: white;
+    text-align: center;
+}
+
+
