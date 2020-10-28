@@ -239,7 +239,7 @@ h1{
 .contenu_faune-et-flore{
     width: 80%;
     height: 500px;
-    margin: 300px auto 120px auto;
+    margin: 200px auto 120px auto;
     background-color: #e9c46a;
     border: 10px double #264653;
     box-shadow: 2px 2px 4px #264653;
@@ -305,24 +305,26 @@ h1{
     height: 800px;
     margin:  0 auto 120px auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .culture_titre{
-    margin-left: 55%;
-    margin-top: 1%;
+    width: 100%;
     padding: 5px;
     font-size: 25px;
     background-color: #264653;
     color: white;
-    border: 2px solid white;
-    position: absolute;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Block religion*/
 
 .culture_religion{
-    width: 33%;
-    height: 500px;
+    width: 33.33%;
+    height: 100%;
     background-image: url(images/image-religion.jpeg);
     background-size: cover;
     background-position: center;
@@ -335,11 +337,10 @@ h1{
 /*Block poesie*/
 
 .culture_poesie{
-    width: 33%;
-    height: 500px;
+    width: 33.33%;
+    height: 100%;
     background-image: url(images/image_poesie.jpg);
     background-size: cover;
-    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,36 +350,15 @@ h1{
 /*Block chanson*/
 
 .culture_chanson{
-    width: 33%;
-    height: 500px;
+    width: 33.33%;
+    height: 100%;
     background-image: url(images/image-chanson.jpg);
     background-size: cover;
     background-position: center;
-    margin-top: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: ease 1s;
-}
-
-/* Effets au survol des blocks religion chanson et poesie*/
-
-.culture_religion:hover{
-    height: 800px;
-    margin-top: 0px;
-    transition-duration: 1.5s;
-}
-
-.culture_poesie:hover{
-    height: 800px;
-    margin-top: 0px;
-    transition-duration: 1.5s;
-}
-
-.culture_chanson:hover{
-    height: 800px;
-    margin-top: 0px;
-    transition-duration: 1.5s;
 }
 
 /*Style des titres des blocks */
@@ -401,7 +381,6 @@ h1{
     width: 80%;
     height: 600px;
     margin: 0 auto 120px auto;
-    background-color: #307564;
 }
 
 .histoire_titre{
